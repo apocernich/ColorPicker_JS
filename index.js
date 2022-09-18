@@ -2,21 +2,29 @@ function inputToArray() {
   R = parseFloat(document.getElementById('colorR').value);
   G = parseFloat(document.getElementById('colorG').value);
   B = parseFloat(document.getElementById('colorB').value);
-
-  colorConverterRGBToPy(R, G, B);
+  if (0 > (R, G, B) || (R, G, B) > 1) {
+    alert('All fields must be between 0 and 1');
+    return;
+  } else {
+    colorConverterRGBToPy(R, G, B);
+  }
 }
 
 const colorConverterRGBToPy = (R, G, B) => {
-  let startingColor = [R, G, B];
-  let endingColor = [];
-  for (let i = 0; i < startingColor.length; i++) {
-    endingColor[i] =
-      (1 / (startingColor[0] + startingColor[1] + startingColor[2])) *
-      startingColor[i];
+  let startingColorArray = [R, G, B];
+  let endingColorArray = [];
+  for (let i = 0; i < startingColorArray.length; i++) {
+    endingColorArray[i] = (
+      (1 /
+        (startingColorArray[0] +
+          startingColorArray[1] +
+          startingColorArray[2])) *
+      startingColorArray[i]
+    ).toFixed(3);
   }
-  endingColor[3] = Math.max(...startingColor) / 255;
+  endingColorArray[3] = Math.max(...startingColorArray);
 
-  console.log(endingColor);
+  document.getElementById('output').textContent = endingColorArray;
 };
 
 const colorConverterPyToRGB = () => {};
