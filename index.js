@@ -1,25 +1,25 @@
-function inputToArray(type) {
-  if (type == 'RGB') {
-    let p = parseFloat(document.getElementById('colorp').value);
-    let y = parseFloat(document.getElementById('colory').value);
-    let pyB = parseFloat(document.getElementById('colorpyB').value);
-    let L = parseFloat(document.getElementById('colorL').value);
-    if (0 > (p, y, pyB, L) || (p, y, pyB, L) > 1) {
-      alert('All fields must be between 0 and 1');
-      return;
-    } else {
-      colorConverterPyToRGB(p, y, pyB, L);
-    }
-  } else if ((type = 'pyBL')) {
-    let R = parseFloat(document.getElementById('colorR').value);
-    let G = parseFloat(document.getElementById('colorG').value);
-    let rgbB = parseFloat(document.getElementById('colorrgbB').value);
-    if (0 > (R, G, rgbB) || (R, G, rgbB) > 1) {
-      alert('All fields must be between 0 and 1');
-      return;
-    } else {
-      colorConverterRGBToPy(R, G, rgbB);
-    }
+function inputpyBLtoRGBArray() {
+  let p = parseFloat(document.getElementById('colorp').value);
+  let y = parseFloat(document.getElementById('colory').value);
+  let pyB = parseFloat(document.getElementById('colorpyB').value);
+  let L = parseFloat(document.getElementById('colorL').value);
+  if (0 > (p, y, pyB, L) || (p, y, pyB, L) > 1) {
+    alert('All fields must be between 0 and 1');
+    return;
+  } else {
+    colorConverterPyToRGB(p, y, pyB, L);
+  }
+}
+
+function inputRGBtopyBLArray() {
+  let R = parseFloat(document.getElementById('colorR').value);
+  let G = parseFloat(document.getElementById('colorG').value);
+  let rgbB = parseFloat(document.getElementById('colorrgbB').value);
+  if (0 > (R, G, rgbB) || (R, G, rgbB) > 1) {
+    alert('All fields must be between 0 and 1');
+    return;
+  } else {
+    colorConverterRGBToPy(R, G, rgbB);
   }
 }
 
