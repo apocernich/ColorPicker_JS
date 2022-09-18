@@ -33,7 +33,6 @@ const colorConverterRGBToPy = (R, G, B) => {
   let endingColorArray = [];
   //iterates through the RGB to pyBL function
   for (let i = 0; i < startingColorArray.length; i++) {
-    console.log(startingColorArray[i]);
     endingColorArray[i] = (
       (1 /
         (startingColorArray[0] +
