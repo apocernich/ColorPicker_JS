@@ -1,5 +1,5 @@
 /* stylelint-disable max-line-length */
-/* stylelint-disable selector-id-pattern */
+
 body {
   display: grid;
   width: auto;
@@ -19,7 +19,7 @@ body {
   font-size: xxx-large;
 }
 
-#inputRGBtopyBLArray {
+#input-rgb-to-pybl-array {
   background-color: lightgray;
   grid-column-start: 2;
   grid-row-start: 3;
@@ -30,54 +30,54 @@ body {
   grid-template-rows: [first] 7% [line2] 20% [line3] 3% [line4] 20% [line5] 3% [line6] 20% [line7] 3% [line8] 20% [line9] 3% [end];
 }
 
-#inputRGBtopyBLArray #colorInputRGB {
+#input-rgb-to-pybl-array #color-input-rgb {
   grid-column: 2 / 7;
   grid-row: 2 / 3;
   font-size: xx-large;
 }
 
-#inputRGBtopyBLArray #labelR {
+#input-rgb-to-pybl-array #labelr {
   grid-column-start: 3;
   grid-row-start: 4;
   font-size: larger;
   margin: auto;
 }
 
-#inputRGBtopyBLArray #colorR {
+#input-rgb-to-pybl-array #colorr {
   grid-column-start: 4;
   grid-row-start: 4;
 }
 
-#inputRGBtopyBLArray #labelG {
+#input-rgb-to-pybl-array #labelg {
   grid-column-start: 3;
   grid-row-start: 6;
   font-size: larger;
   margin: auto;
 }
 
-#inputRGBtopyBLArray #colorG {
+#input-rgb-to-pybl-array #colorg {
   grid-column-start: 4;
   grid-row-start: 6;
 }
 
-#inputRGBtopyBLArray #labelrgbB {
+#input-rgb-to-pybl-array #label-rgbb {
   grid-column-start: 3;
   grid-row-start: 8;
   font-size: larger;
   margin: auto;
 }
 
-#inputRGBtopyBLArray #colorrgbB {
+#input-rgb-to-pybl-array #color-rgbb {
   grid-column-start: 4;
   grid-row-start: 8;
 }
 
-#inputRGBtopyBLArray #RGBButton {
+#input-rgb-to-pybl-array #rgb-button {
   grid-column-start: 6;
   grid-row-start: 8;
 }
 
-#inputpyBLtoRGBArray {
+#input-pybl-to-rgb-array {
   background-color: lightgray;
   grid-column-start: 2;
   grid-row-start: 5;
@@ -88,66 +88,66 @@ body {
   grid-template-rows: [first] 8% [line2] 16% [line3] 2% [line4] 16% [line5] 2% [line6] 16% [line7] 2% [line8] 16% [line9] 2% [line10] 16% [end];
 }
 
-#inputpyBLtoRGBArray #colorInputpyBL {
+#input-pybl-to-rgb-array #color-input-pybl {
   grid-column: 2 / 7;
   grid-row-start: 2;
   font-size: xx-large;
 }
 
-#inputpyBLtoRGBArray #labelp {
+#input-pybl-to-rgb-array #labelp {
   grid-column-start: 3;
   grid-row-start: 4;
   font-size: larger;
   margin: auto;
 }
 
-#inputpyBLtoRGBArray #colorp {
+#input-pybl-to-rgb-array #colorp {
   grid-column-start: 4;
   grid-row-start: 4;
 }
 
-#inputpyBLtoRGBArray #labely {
+#input-pybl-to-rgb-array #labely {
   grid-column-start: 3;
   grid-row-start: 6;
   font-size: larger;
   margin: auto;
 }
 
-#inputpyBLtoRGBArray #colory {
+#input-pybl-to-rgb-array #colory {
   grid-column-start: 4;
   grid-row-start: 6;
 }
 
-#inputpyBLtoRGBArray #labelpyB {
+#input-pybl-to-rgb-array #labelpyb {
   grid-column-start: 3;
   grid-row-start: 8;
   font-size: larger;
   margin: auto;
 }
 
-#inputpyBLtoRGBArray #colorpyB {
+#input-pybl-to-rgb-array #colorpyb {
   grid-column-start: 4;
   grid-row-start: 8;
 }
 
-#inputpyBLtoRGBArray #labelL {
+#input-pybl-to-rgb-array #labell {
   grid-column-start: 3;
   grid-row-start: 10;
   font-size: larger;
   margin: auto;
 }
 
-#inputpyBLtoRGBArray #colorL {
+#input-pybl-to-rgb-array #colorl {
   grid-column-start: 4;
   grid-row-start: 10;
 }
 
-#inputpyBLtoRGBArray #pyBLButton {
+#input-pybl-to-rgb-array #pybl-button {
   grid-column-start: 6;
   grid-row-start: 10;
 }
 
-#outputLabel {
+#output-label {
   grid-column-start: 2;
   grid-row-start: 7;
   font-size: xx-large;
@@ -158,4 +158,15 @@ body {
   grid-column-start: 2;
   grid-row-start: 8;
   font-size: xx-large;
+}
+
+#link-pivotal {
+  grid-column-start: 1;
+  margin: auto;
+}
+
+#link-git {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  margin: auto;
 }
