@@ -8,17 +8,31 @@
   <title>Color Picker</title>
 </head>
 <body>
-  <form onsubmit="inputToArray()">
+  <form onsubmit="inputToArray('pyBL')">
     <label id="colorInput">Color:</label>
     <label>R:</label>
     <input type="text" id="colorR" name="colorR">
     <label>G:</label>
     <input type="text" id="colorG" name="colorG">
     <label>B:</label>
-    <input type="text" id="colorB" name="colorB">
-    <button type="button" value="Submit" onclick="inputToArray()">Submit</button>
+    <input type="text" id="colorrgbB" name="colorrgbB">
+    <button type="button" value="Submit" onclick="inputToArray('pyBL')">Submit</button>
   </form>
   <div id="outputLabel" >output:</div>
   <div id="output"></div>
+    <form onsubmit="inputToArray('RGB')">
+      <label id="colorInput">Color:</label>
+      <label>p:</label>
+      <input type="text" id="colorp" name="colorp">
+      <label>y:</label>
+      <input type="text" id="colory" name="colory">
+      <label>B:</label>
+      <input type="text" id="colorpyB" name="colorpyB">
+      <label>L:</label>
+      <input type="text" id="colorL" name="colorL">
+      <button type="button" value="Submit" onclick="inputToArray('RGB')">Submit</button>
+    </form>
+    <div id="outputLabel">output:</div>
+    <div id="output"></div>
 </body>
 </html>
