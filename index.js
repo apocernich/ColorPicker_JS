@@ -37,7 +37,9 @@ const colorConverterRGBToPy = (R, G, B) => {
   }
   endingColorArray[3] = Math.max(...startingColorArray);
 
-  document.getElementById('output').textContent = endingColorArray;
+  document.getElementById(
+    'output'
+  ).textContent = `pyBL value: (${endingColorArray[0]},${endingColorArray[1]},${endingColorArray[2]},${endingColorArray[3]})`;
 };
 
 const colorConverterPyToRGB = (p, y, B, L) => {
@@ -55,5 +57,7 @@ const colorConverterPyToRGB = (p, y, B, L) => {
       startingColorArray[i]
     ).toFixed(3);
   }
-  document.getElementById('output').textContent = endingColorArray;
+  document.getElementById(
+    'output'
+  ).textContent = `RGB value: (${endingColorArray[0]},${endingColorArray[1]},${endingColorArray[2]})`;
 };
